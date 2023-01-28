@@ -1,0 +1,207 @@
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+* {box-sizing: border-box; margin: 0; padding: 0; text-decoration: none;}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.cabecalhoimg {
+    width: 100%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh; 
+}
+
+.caixa {
+    display: flex;
+    font-family: 'Red Hat Display', sans-serif;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    border-radius: 2vh;
+    height: 60vh;
+    max-width: 25rem;
+}
+
+.tituparag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.titulo {
+    font-size: 22px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.parag {
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+    padding-top: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.minicard {
+    display: grid;
+    grid-template: 
+    "titulobox textolink" / 70px 1fr 90px ;
+    min-width: 19rem;
+    height: 8vh;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1vh;
+}
+
+.icondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.icon {
+    max-width: 4vh;
+}
+
+.textocentro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 20px;
+}
+
+.titulobox {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+    padding-top: 1px;
+}
+
+.valor {
+    font-size: 17px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    padding-top: 2px;
+}
+
+.textolink {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btnchange {
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;  
+}
+
+.btnchange:hover {
+    color: hsl(245, 75%, 72%);
+    text-decoration:none;
+    cursor: pointer;
+}
+
+
+.botaocomprar {
+    border: none;
+    border-radius: 1vh;
+    font-weight: 900;
+    margin-top: 1.5rem;
+    min-width: 19rem;
+    min-height: 4vh;
+    background-color: hsl(245, 75%, 52%);    
+    color: hsl(225, 100%, 98%);
+    box-shadow: 0px 20px 20px hsl(245, 75%, 90%);
+}
+
+.botaocomprar:hover {
+    background-color: hsl(245, 75%, 68%);
+    cursor: pointer;
+}
+
+.divcancelar {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 32px;
+}
+.botaocancelar {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+}
+
+.botaocancelar:hover, .botaocancelar:link {
+    color: hsl(224, 23%, 15%);
+    cursor:pointer;
+}
+
+footer{
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 700px){
+    [class*="caixa"]{
+        max-width: 21.87rem;
+    }
+
+    [class*="botaocomprar"]{
+        min-width: 300px;
+        min-height: 6vh;
+        font-size: 15px;
+        border-radius: 1.5vh;
+    }
+
+    [class*="parag"]{
+        padding-top: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    [class*="titulo"]{
+        padding-top: 20px;
+    }
+
+    [class*="textocentro"]{
+        padding-left: 10px;
+    }
+
+    [class*="titulobox"]{
+        padding-top: 2px;
+        font-size: 15px;
+    }
+
+    [class*="valor"]{
+        font-size: 15px;
+    }
+    
+    [class*="icon"]{
+        max-width: 6.5vh;
+        padding-left: 10px;
+    }
+
+}
+
+@media only screen and (max-height: 810px){
+
+    [class*="divcancelar"]{
+       padding-top: 20px;
+    }
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
